@@ -1,0 +1,44 @@
+﻿@page
+@model IndexModel
+@{
+	ViewData["Title"] = "Введите проверочный код";
+	Layout = "~/Pages/Shared/_LayoutNoAuth.cshtml";
+}
+
+<div class="text-center">
+	<h1 class="display-4">@Model.greeting</h1>
+	<p></p>
+	<div>
+		<span class="error" id="Lbl_Error"></span>
+	</div>
+	@{
+		if (@Model.needInfo)
+		{
+			<textarea name="check_info" class="check_info" id="check_info" placeholder="Объяснительная о причинах задержки"></textarea>
+		}
+	}
+	@{
+		if (!@Model.notfound)
+		{
+			<div class="pin_border" id="pin_border">
+				<div class="pin_placeholder inputfocused" id="pin_placeholder">Код подтверждения</div>
+				<input name="pin_input" class="pin_input" id="pin_input" type="text" maxlength="4">
+			</div>
+		}
+	}
+
+</div>
+
+@section Styles{
+	<link rel="stylesheet" href="/css/CodeType.css" asp-append-version="true" />
+	@{
+		@*if (@Model.woman)
+		{
+			<link rel="stylesheet" href="/css/spring.css" asp-append-version="true" />
+		}*@
+	}
+}
+@section Scripts {
+	<script type="text/javascript" src="~/js/jquery/jquery1.7.min.js"></script>
+	<script type="text/javascript" src="~/js/CodeTypeForm.js" asp-append-version="true"></script>
+}

@@ -1,0 +1,21 @@
+.pin_border.wrong {
+    background: #fff1f1;
+    border-color: #ff0000;
+}
+.pin_border.wrong input {
+    background: #fff1f1;
+}
+
+.pin_border.wait {
+    background: #e8e8e8;
+    cursor: wait;
+}
+.pin_border.wait input {
+    background: #e8e8e8;
+}
+
+#Lbl_Error {
+    display: block;
+    margin: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,18 @@
+.x-btn-default-toolbar-small {
+    /*padding: 0;*/
+}
+
+html {
+    font-family: Tahoma;
+}
+.x-window-header-title-default > .x-title-text-default:after {
+    color: #ced9e7 !important;
+}
+
+.x-panel-header-title-default > .x-title-text-default:after {
+    content: '';
+}
+
+.x-panel-header-title-default-framed > .x-title-text-default-framed:after {
+    content: '';
+}

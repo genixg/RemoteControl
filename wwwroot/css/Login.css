@@ -1,0 +1,278 @@
+﻿/* Стили для страницы логина */
+
+table.start_page thead {
+	font-family: Verdana, Times New Roman !important;
+	font-weight: 700;
+}
+
+table.start_page tbody td 
+{
+	padding-top: 50px;
+	vertical-align: top;
+}
+
+table.start_page tfoot {
+	vertical-align: top;
+}
+
+table.start_page, table.start_page td {
+	border: 0px solid #000;
+	width: 100%;
+	text-align: center;
+	margin-top: 25px;
+}
+
+table.start_page span.cgs {
+	font-size:      14pt;
+	color:          #252E7B;
+}
+
+table.start_page span.investor, table.start_page span.investor a {
+	font-size:      14pt;
+	color:          #235f82;
+}
+
+table.start_page span.name {
+	font-size:      18pt;
+	color:          #09C;
+}
+
+table.start_page span.error {
+	font-weight: 700;
+	font-size: 13px;
+	color: #F03;
+}
+
+table.login {
+    margin              : auto;
+	background-color    : #FFF;
+	border              : 1px solid #555;
+	width               : 300px;
+    border-collapse     : separate !important;
+    border-spacing      : 2px !important;
+	border-radius: 5px; 
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .3), -23px 0 20px -23px rgba(0, 0, 0, .8), 23px 0 20px -23px rgba(0, 0, 0, .8), 0 0 40px rgba(0, 0, 0, .1) inset;
+}
+
+table.login td {
+	padding             : 5px 5px 15px;
+	padding-top:  10px !important;
+	border-radius: 5px;
+	vertical-align: middle;
+}
+
+table.login th {
+	background-color    : #235f82;
+	text-align          : center;
+	vertical-align      : middle;
+	color               : #FFF;
+	font-size           : 18px;
+	font-style          : italic;
+	font-weight         : bold;
+}
+
+table.login td.field {
+	width               : 160px;
+	text-align          : left;
+	padding-left        : 20px;
+}
+
+table.login input {
+	padding             : 2px;
+	width               : 120px;
+	vertical-align: middle;
+}
+
+
+table.start_page tr.contacts td {
+	text-align          : center !important;
+}
+
+.noautologin {
+	width: 350px;
+	background: #eef7fc;
+	padding: 20px;
+	text-align: justify;
+	margin: 20px auto;
+	border: 1px solid #cadde9;
+	border-radius: 5px;
+}
+#l_CurrentVersion 
+{
+	margin-top: 50px;
+	color: #436b82;
+}
+#l_backup_date {
+	color: #436b82;
+}
+
+.slider_bg{
+    background: url("/img/kgngp/slide-huge.jpg") top center no-repeat;
+    position: relative;
+	padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 580px;
+    background-size: 100%;
+    height: auto;
+    top: -20px;
+    z-index: 1;
+    /*background-size: cover;*/
+}
+/* HUGE monitor */
+@media screen and (max-width: 2000px) {
+	.slider_bg {
+		background: url("/img/kgngp/slide-big-normal.jpg") top center no-repeat;
+	}
+}
+
+footer{
+    /*width: 1170px;*/
+	height: 70px;
+    margin: 0 auto;
+	overflow: hidden;
+    border-top: 2px solid #666666;
+    padding: 10px 0 10px;
+    line-height: 22px;
+    color: #666666;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+footer a {
+    color: #666666;
+	text-decoration: none;
+}
+.text-center {
+	text-align: center !important;
+}
+#version_info {
+	color: #CCC;
+	text-decoration: none;
+}
+#backup_info {
+	display: none;
+}
+h1 
+{
+	margin-top: 40px;
+	font-size: 18pt;
+	color: #0795D7;
+	font-weight: bold;
+}
+.login_button{
+font:normal 16px Arial, Helvetica, sans-serif;
+font-style:normal;
+color:#ffffff;
+background:#0795d7;
+border:3px outset #ffffff;
+text-shadow:0px -1px 3px #000000;
+box-shadow:2px 2px 5px #000000;
+-moz-box-shadow:2px 2px 5px #000000;
+-webkit-box-shadow:2px 2px 5px #000000;
+border-radius:10px 10px 10px 10px;
+-moz-border-radius:10px 10px 10px 10px;
+-webkit-border-radius:10px 10px 10px 10px;
+width:180px !important;
+padding:17px 40px;
+cursor:pointer;
+margin:0 auto 5px;
+}
+.login_button:hover{
+background:#2ea4db;
+}
+.login_button:active{
+cursor:pointer;
+position:relative;
+top:2px;
+}
+#contact_info {
+	margin: 10px auto 0;
+	color: #666666;
+}
+.login-href {
+	font-size: 20px;
+	color: #2ea4db;
+}
+.login-href img {
+	vertical-align: bottom;
+}
+.login-href i {
+	vertical-align: bottom;
+}
+#Button1 { display: none;}
+.red { color: red;}
+
+.success-request {
+	display: none;
+	padding: 20px; 
+	background: rgb(105,255,116);
+	background: linear-gradient(298deg, rgba(105,255,116,0.2721289199273459) 35%, rgba(149,254,50,0.4457983877144608) 63%, rgba(0,255,12,0.12086841572566531) 100%); 
+	border:rgb(105,255,116) 1px solid;
+	border-radius: 10px;
+}
+#request_number {
+	font-weight: bold;
+}
+.tablerequests {
+	width: 100%;
+}
+.tablerequests th {
+	text-align: center;
+}
+.tablerequests td, .tablerequests th, .tablerequests a  {
+	font-size: 12pt;
+}
+.tablerequests td:first-child, .tablerequests td:nth-child(3), .tablerequests td:nth-child(4), .tablerequests td:nth-child(5) {
+	text-align: center;
+}
+
+.pinpage .error {
+	margin: 30px; 
+}
+.error {
+	margin: 30px; 
+}
+
+.pin_border {
+	position: relative;
+	width: 180px;
+	height: 40px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	margin: 20px auto 200px;
+	padding: 10px 20px;
+	background: rgba(255, 255, 255, 0.7);
+} 
+.pin_placeholder {
+	text-align: left;
+	font-size: 14pt;
+	color: gray;
+	position: absolute;
+	top: 15px;
+}
+.inputfocused .pin_placeholder {
+	font-size: 10pt;
+	position: relative;
+	top: 0;
+}
+.pin_border input {
+	border: none;
+	width: 100%;
+	font-size: 14pt;
+} 
+.inputfocused input {
+	font-size: 14pt;
+}
+.check_info {
+	width: 400px;
+	height: 100px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	background: #fff1f1;
+}
+.check_info.attention {
+	border: 1px solid red;
+}

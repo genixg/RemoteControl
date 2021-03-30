@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=10, IE=Edge" />
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0.5)" />
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0.5)" />
+    <title>@ViewBag.Title</title>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>@ViewBag.Title</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+        <link rel="stylesheet" type="text/css" href="css/Style.css" asp-append-version="true" />
+        <link rel="stylesheet" type="text/css" href="css/Login.css" asp-append-version="true" />
+        @RenderSection("Styles", required: false)
+        <script type="text/javascript" src="js/jquery/jquery1.7.min.js"></script>
+        <script type="text/javascript" src="js/site.js" asp-append-version="true"></script>
+    </head>
+    <body>
+        <div class="slider_bg">
+            @RenderBody()
+        </div>
+        <footer>
+            <div class="container-non-responsive">
+                <div class="row">
+                    <div class="text-center">ООО «Красноярскгазпром нефтегазпроект»</div>
+                    <div class="text-center">© 2019 &minus; 2020</div>
+                </div>
+            </div>
+        </footer>
+
+        @RenderSection("Scripts", required: false)
+    </body>
+</html>
+</head>
+</html>

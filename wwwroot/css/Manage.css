@@ -1,0 +1,44 @@
+﻿.e_check {
+    display:block;
+    border-radius: 3px;
+    padding: 0px 3px;
+    width: 76px;
+}
+
+.e_check_notsent {
+    background: #f6f6f6;
+}
+.e_check_nottyped {
+    background: #ffdcdc;
+}
+.e_check_toomuch {
+    background: #fff5da;
+}
+.e_check_good {
+    background: #e8ffea;
+}
+
+.e_check span {
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    padding: 0 3px;
+}
+.e_check span:first-child {
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+}
+.e_check span:last-child {
+    width: auto;
+    display: inline-block;
+}
+
+.lblExportType {
+    font-size: smaller;
+    color: #444444;
+}
+
+.notcontrolled {
+    color: gray;
+}

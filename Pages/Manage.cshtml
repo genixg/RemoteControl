@@ -1,0 +1,21 @@
+﻿@page
+@model ManageModel
+@{
+    ViewData["Title"] = "Управление проверками";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="/css/Manage.css" asp-append-version="true" />
+}
+
+<div id="extcontainer"></div>
+
+@section Scripts {
+    <script type="text/javascript" src="/js/Manage/Manage.Ext.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        Ext.onReady(function () {
+            (new ManagePanel()).createPanel();
+        });
+    </script>
+}
